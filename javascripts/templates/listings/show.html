@@ -1,0 +1,10 @@
+<h3>Listing for {{ listingId }}</h3>
+
+<nav>
+  <a ui-sref = "listings.show.photo( { id: {{ listingId }} } )">Photo</a>
+  <a ui-sref = "listings.show.photo( { id: {{ listingId }} } )">Photo</a>
+  <a ui-sref = "listings.show.details( { id: {{ listingId }} } )">Details</a>
+  <a ui-sref = "listings.show.contact( { id: {{ listingId }} } )">Contact Info</a>
+</nav>
+
+<ui-view></ui-view>
