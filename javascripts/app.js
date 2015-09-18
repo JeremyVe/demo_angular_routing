@@ -11,10 +11,30 @@ routingDemo.config( function( $stateProvider, $urlRouterProvider ){
     // The default '/listings/#/' state
     .state('listings', {
       url: '',
-      templateUrl: 'javascripts/templates/listings.html',
-      controller: function(){ 
-        console.log("/# Controller!");
-      },
+      // templateUrl: 'javascripts/templates/listings.html',
+      // controller: function(){ 
+      //   console.log("/# Controller!");
+      // },
+      views: {
+        'title': {
+          templateUrl: 'javascripts/templates/listings/_title.html',
+          controller: function(){ 
+            console.log("_titleController");
+          }
+        },
+        'index': {
+          templateUrl: 'javascripts/templates/listings/_index_panel.html',
+          controller: function(){ 
+            console.log("_indexPanelController");
+          }
+        },
+        'show': {
+          templateUrl: 'javascripts/templates/listings/_show.html',
+          controller: function(){ 
+            console.log("_showWrapperController");
+          }
+        },
+      }
     })
 
 

@@ -17,7 +17,7 @@
       <a href = "/listings.html">Listings</a>
       <a href = "/contact.html">Contact</a>
       <a href = "/about.html">About</a>
-    </header>
+    </header><hr>
 
     <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
     <!-- ABOVE HERE WOULD NORMALLY BE IN THE LAYOUT -->
@@ -26,7 +26,16 @@
 
     <main ng-app = "routingDemo">
 
-      <ui-view></ui-view>
+      <!-- The title section -->
+      <div ui-view = "title" >Title...</div>
+
+      <!-- The SHOW wrapper -->
+      <div ui-view = "show">Show Wrapper...</div>
+      
+      <!-- The index of listings panel -->
+      <div ui-view = "index" >Index Panel...<div>
+
+
 
     </main>
 
@@ -35,7 +44,7 @@
     <!-- BELOW HERE WOULD NORMALLY BE IN THE LAYOUT -->
     <!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
 
-    <footer>
+    <hr><footer>
       Copyright Fooville Enterprises Inc
     </footer>
 
